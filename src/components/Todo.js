@@ -9,6 +9,7 @@ import {
   Label,
   Input,
   Col,
+  CardTitle
 } from 'reactstrap'
 import {
   deleteTodo,
@@ -86,13 +87,15 @@ function Todo(props) {
   }
   return (
     <>
-      <div className="flex-justify-content-center">
+    <div className="d-flex justify-content-center mt-4">
+     <CardTitle tag="h5">The list of Department</CardTitle>
+     </div>
+      <div className="d-flex justify-content-end">
         <Button
-          className="mt-4"
+          className="my-3 mx-5"
           variant="success"
           onClick={() => {
             setOpenModalCreate(!openModalCreate)
-            // setUpdateId(item.id)
           }}
         >
           Create
